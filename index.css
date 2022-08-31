@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font: 'Inter', sans-serif;
+    /* this is for like everything else, aka the real meaty content after the blue intro */
+    --text-color-main-onwhite: rgb(28, 30, 33);
+    --text-color-secondary-onwhite: rgb(28, 30, 33);
+
+    /* this is for like giant title in white, smaller text underneath, a button (not here) and then fine print under the button */
+    --text-color-main-onblue: rgb(255, 255, 255);
+    --text-color-description-onblue: rgb(198, 202, 208);
+    --text-color-fine-print-onblue: rgb(141, 143, 149);
+
+    /* technically this is for widgets */
+    --icon-color-onwidget: rgb(107, 114, 128);
+    --background-widget-gray: rgb(245, 248, 250);
+    /* this is for a widget in a widget */
+    --icon-color-onwidget-l2: rgb(55, 65, 81);
+    --background-widget-gray-l2: rgb(234, 239, 243);
+    /* main background colors */
+    --background-navy-blue: rgb(31, 32, 46);
+    --background-white: rgb(255, 2555, 255);
+
+    /* misc/accent colors */
+    --accent-color-link: rgb(23, 63, 156);
+    --accent-color-success: #00a400;
+    --accent-color-info: #54c7ec;
+    --accent-color-warning: #ffba00;
+    --accent-color-danger: #fa383e;
+
+
+    /* NEW COLORS AKA NEW NAMES */
+    --text-white: white;
+    --text-sharp: #282a30;
+    --text-light: #6b6f76;
+    --text-lighter: #929cad;
+
+
+    --white: #ffffff;
+    --off-white: #fdfdfd;
+
+    --navy: rgb(31, 32, 46);
+    --shadow-navy: rgba(31, 32, 46, 0.499);
+    --shadow-one: : 0 0 20px rgba(0, 0, 0, 0.04);
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--navy);
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    max-width: 500px;
+}
+
+.heading {
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--text-color-main-onblue);
+    margin-bottom: 0;
+}
+
+.description {
+    font-weight: normal;
+    font-size: 28px;
+    color: var(--text-color-description-onblue);
+    margin-bottom: 15px;
+}
+
+.button {
+    margin-right: 10px;
+    align-items: center;
+    border-radius: .375rem;
+    display: inline-flex;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: .625rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.button:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul, li {
+    text-align: left;
+    list-style-type: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+    cursor: pointer;
+}
+
